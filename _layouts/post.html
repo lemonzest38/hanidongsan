@@ -1,38 +1,47 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
 
-<div id="post" class="container">
+  <body>
+    {% include header.html %}
 
-	<div class="postthumb"><img src="/thumbnails/{{ page.thumbnail }}" /></div>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
 
-	<h1>{{ page.title }}</h1>
+          <header class="post-header">
 
-	<div class="meta clearfix">
-		<strong>Author:</strong> {{ page.author }}
+            {% if page.draft %}
+              {% include draft-banner.html %}
+            {% endif %}
 
-		{% if page.license %}
-			<br /><strong>License:</strong> {{ page.license }}
-		{% endif %}
+            <h1 class="post-title">
+            {% if page.headline_formatted_title %}
+              {{ page.headline_formatted_title | newline_to_br }}
+            {% else %}
+              {{ page.title }}
+            {% endif %}
+            </h1>
 
-		<br /><br />
-		{% if page.homepage %}
-			<a class="btn" href="{{ page.homepage }}"><i class="icon-home"></i> Homepage</a>
-		{% endif %}
-		{% if page.download %}
-			<a class="btn" href="{{ page.download }}"><i class="icon-download-alt"></i> Download</a>
-		{% endif %}
-		{% if page.demo %}
-			<a class="btn" href="{{ page.demo }}"><i class="icon-road"></i> Demo</a>
-		{% endif %}
-		{% if page.license_link %}
-			<a class="btn" href="{{ page.license_link }}"><i class="icon-file"></i> License</a>
-		{% endif %}
-	</div>
+            {% if page.subtitle %}<h1 class="post-subtitle">{{ page.subtitle }}</h1>{% endif %}
+            <p class="post-meta"><span class="post-date">{{ page.date | date: "%B %-d, %Y" }}
+            </span>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+          </header>
 
+          <article class="post-content">
+            {{ content }}
+          </article>
 
-	<div class="post-content">
-	{{ content }}
-	</div>
+          {% if page.draft %}
+              {% include draft-banner.html %}
+          {% endif %}
 
-</div>
+      </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    {% include foot.html %}
+  </body>
+</html>
