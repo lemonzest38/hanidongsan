@@ -5,10 +5,9 @@ profile_picture:
   alt: website picture
 ---
 
-<p>
-  Welcome! This site serves as an example for the Bay Jekyll theme. Bay is a very simple and minimal theme, directly inspired by Dan Grover's <a href="http://dangrover.com">website</a>.
-</p>
+<p>경희정재현한의원은 보건복지부지정 한방척추전문 자생한방병원에서 10년간 근무한 한방재활의학과 전문의가 진료합니다.</p>
 
-<p>
-  You can find the source code and the instructions on <a href="https://github.com/eliottvincent/bay">GitHub</a>.
-</p>
+<p>그간의 진료경험을 바탕으로 추간판탈출증, 척추관협착증을 비롯한 목 허리 어깨 무릎 통증, 교통사고 후유증, 스포츠 손상을 진료합니다.</p>
+
+<p>더불어 개인 체질 기반의 다이어트, 성장클리닉, 감기, 체질보약 클리닉 등을 운영하고 있습니다.</p>
+
