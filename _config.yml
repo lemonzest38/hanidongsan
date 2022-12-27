@@ -21,18 +21,23 @@ footer:
   show_powered_by: true
   contact:
     - name: Email
+      icon: mail
       value: hanidongsan@naver.com
       link: mailto:hanidongsan@naver.com
     - name: Tel
+      icon: receiver
       value: 02-575-8875
       link: tel:02-575-8875
   follow:
     - name: Twitter
+      icon: twitter
       link: http://twitter.com/YourTwitterUsername
       username: "@YourTwitterUsername"
     - name: Facebook
+      icon: facebook
       link: http://facebook.com/YourFacebookUsername
     - name: LinkedIn
+      icon: linkedin
       link: http://linkedin.com/in/YourLinkedInUsername
 
 # Build settings

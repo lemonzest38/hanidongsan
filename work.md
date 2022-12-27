@@ -1,18 +1,23 @@
 ---
 layout: work
-title: Work
+title: 진료안내
 slug: /work
 items:
-  - title: My Interest 1
+  - title: 평일
     image:
       src: /assets/img/work/water.png
-      alt: water
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  - title: My Interest 2
+      alt: weekday office hours
+    description: 오전 9:30 ~ 오후 6:30. 점심시간 오후 1:00 ~ 2:00
+  - title: 토요일
     image:
       src: /assets/img/work/sand.png
-      alt: sand
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      alt: wekend office hours
+    description: 오전 9:30 ~ 오후 3:00. 점심시간 없음.
+  - title: 공휴일
+    image:
+      src: /assets/img/work/water.png
+      alt: holiday
+    description: 휴무
 ---
 
 This is an example of a "Work" page, displaying your work, your interests, your projects.
